@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="generator">
+                <div class="generator__head">
+                    <h2>Password Generator</h2>
+                    <div class="generator__head-input">
+                        <input type="text" class="generator__head-password" disabled value="Click To Generate">
+                        <a class="generator__head-copy" href="#"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" class="svg-inline--fa fa-copy fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg></a> 
+                        <div class="generator__head-copy-clicked"> <span>Copied to clipboard</span></div>
+                    </div>
+                </div>
+                <div class="generator__range">
+                    <span class="generator__range-number">length: 18</span>
+                    <div class="generator__range-length" data-length="18">
+                        <input type="range" class="generator__range-input" id ="myRange"  min="4" max="32" value="18"> 
+                    </div>
+                </div>
+                <div class="generator__settings">
+                    <span class="generator__settings-title">settings</span>
+                    <form >
+                        <div class="generator__settings-toggle-checkbox">
+                            <span>Include Uppercase</span>
+                            <label for="uppercase" class="switch">
+                                <input class="uppercase-switch" id="uppercase" type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="generator__settings-toggle-checkbox">
+                            <span>Include Lowercase</span>
+                            <label for="lowercase" class="switch" >
+                                <input class="lowercase-switch" id="lowercase" name="lowercase" type="checkbox" checked >
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="generator__settings-toggle-checkbox">
+                            <span>Include Numbers </span>
+                            <label for="number" class="switch">
+                                <input class="number-switch" name="number" id="number" type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="generator__settings-toggle-checkbox">
+                            <span>Include Symbols</span>
+                            <label for="symbols" class="switch">
+                                <input class="symbols-switch" name="symbols" id="symbols" type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="generator__button">
+                            <button type="submit" class="generator__button-btn">Generate Password</button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>
